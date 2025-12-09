@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Home from './pages/Home/Home'
 import Characters from './pages/Characters/Characters'
+import CharacterDetails from './pages/CharacterDetails/CharacterDetails'
 import Lore from './pages/Lore/Lore'
 import Map from './pages/Map/Map'
 import './App.css'
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/characters" element={<Characters />} />
+          <Route path="/characters/:id" element={<CharacterDetails />} />
           <Route path="/lore" element={<Lore />} />
           <Route path="/map" element={<Map />} />
         </Routes>

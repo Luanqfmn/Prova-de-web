@@ -39,6 +39,8 @@
 .content {
   padding: 1rem;
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -73,4 +75,24 @@
   color: #ccc;
   font-size: 0.9rem;
   line-height: 1.4;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.detailsButton {
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.detailsButton:hover {
+  background-color: #fff;
+  color: #1a1a2e;
 }
