@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 8rem 2rem;
+  background-color: #1a1a2e;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('https://static.wikia.nocookie.net/hollowknight/images/e/ea/Screenshot_HK_Knight_10.png/revision/latest?cb=20210324164358');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  width: 100%;
+  border: 1px solid #4a4a6a;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
