@@ -9,25 +9,20 @@
   color: #fff;
 }
 
-.mapPlaceholder {
+.mapContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
   background-color: #1a1a2e;
-  padding: 3rem;
   border-radius: 12px;
-  border: 2px dashed #4a4a6a;
-}
-
-.areas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.area {
-  background-color: #2a2a40;
-  padding: 1rem 2rem;
-  border-radius: 4px;
-  color: #fff;
   border: 1px solid #4a4a6a;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.mapImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
 }
