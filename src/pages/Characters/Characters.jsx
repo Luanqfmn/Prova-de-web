@@ -1,49 +1,49 @@
 import Card from '../../components/Card/Card'
 import styles from './Characters.module.css'
 
-const charactersData = [
+const dadosPersonagens = [
   {
     id: 1,
-    title: 'The Knight',
-    description: 'The protagonist of Hollow Knight. A vessel of void, exploring Hallownest to uncover its secrets.',
-    image: 'https://static.wikia.nocookie.net/hollowknight/images/4/47/The_Knight_Idle.png/revision/latest?cb=20190618162622',
-    type: 'Protagonist'
+    titulo: 'O Cavaleiro',
+    descricao: 'O protagonista de Hollow Knight. Um receptáculo do vazio, explorando Hallownest para descobrir seus segredos.',
+    imagem: 'https://static.wikia.nocookie.net/hollowknight/images/4/47/The_Knight_Idle.png',
+    tipo: 'Protagonista'
   },
   {
     id: 2,
-    title: 'Hornet',
-    description: 'The protector of Hallownest\'s ruins. A skilled warrior who challenges the Knight.',
-    image: 'https://static.wikia.nocookie.net/hollowknight/images/1/16/Hornet_Idle.png/revision/latest?cb=20251030203109',
-    type: 'Ally/Boss'
+    titulo: 'Hornet',
+    descricao: 'A protetora das ruínas de Hallownest. Uma guerreira habilidosa que desafia o Cavaleiro.',
+    imagem: 'https://static.wikia.nocookie.net/hollowknight/images/1/16/Hornet_Idle.png',
+    tipo: 'Aliada/Chefe'
   },
   {
     id: 3,
-    title: 'Quirrel',
-    description: 'An inquisitive adventurer fascinated by the myths of Hallownest.',
-    image: 'https://static.wikia.nocookie.net/hollowknight/images/e/ee/Quirrel-2.png/revision/latest?cb=20180829023414',
-    type: 'Ally'
+    titulo: 'Quirrel',
+    descricao: 'Um aventureiro curioso fascinado pelos mitos de Hallownest.',
+    imagem: 'https://static.wikia.nocookie.net/hollowknight/images/e/ee/Quirrel-2.png',
+    tipo: 'Aliado'
   },
   {
     id: 4,
-    title: 'The Hollow Knight',
-    description: 'The vessel chosen to seal away the infection. Now corrupted and sealed within the Black Egg.',
-    image: 'https://static.wikia.nocookie.net/hollowknight/images/1/12/B_Hollow_Knight.png/revision/latest?cb=20170412204859',
-    type: 'Boss'
+    titulo: 'O Cavaleiro Vazio',
+    descricao: 'O receptáculo escolhido para selar a infecção. Agora corrompido e selado dentro do Ovo Negro.',
+    imagem: 'https://static.wikia.nocookie.net/hollowknight/images/1/12/B_Hollow_Knight.png',
+    tipo: 'Chefe'
   }
 ]
 
-const Characters = () => {
+const Personagens = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.pageTitle}>Characters of Hallownest</h1>
+      <h1 className={styles.pageTitle}>Personagens de Hallownest</h1>
       <div className={styles.grid}>
-        {charactersData.map(char => (
+        {dadosPersonagens.map(personagem => (
           <Card 
-            key={char.id}
-            title={char.title}
-            description={char.description}
-            image={char.image}
-            type={char.type}
+            key={personagem.id}
+            titulo={personagem.titulo}
+            descricao={personagem.descricao}
+            imagem={personagem.imagem}
+            tipo={personagem.tipo}
           />
         ))}
       </div>
@@ -51,4 +51,4 @@ const Characters = () => {
   )
 }
 
-export default Characters
+export default Personagens

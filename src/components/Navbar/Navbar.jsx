@@ -5,13 +5,13 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <Link to="/">Hollow Knight Wiki</Link>
+        <Link to="/">Wiki Hollow Knight</Link>
       </div>
       <ul className={styles.navLinks}>
-        <li><Link to="/" className={styles.link}>Home</Link></li>
-        <li><Link to="/characters" className={styles.link}>Characters</Link></li>
-        <li><Link to="/lore" className={styles.link}>Lore</Link></li>
-        <li><Link to="/map" className={styles.link}>Map</Link></li>
+        <li><Link to="/" className={styles.link}>Início</Link></li>
+        <li><Link to="/characters" className={styles.link}>Personagens</Link></li>
+        <li><Link to="/lore" className={styles.link}>História</Link></li>
+        <li><Link to="/map" className={styles.link}>Mapa</Link></li>
       </ul>
     </nav>
   )

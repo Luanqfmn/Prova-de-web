@@ -3,23 +3,23 @@ import styles from './Lore.module.css'
 const Lore = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Lore of Hallownest</h1>
+      <h1 className={styles.title}>História de Hallownest</h1>
       <section className={styles.section}>
-        <h2>The Pale King</h2>
+        <h2>O Rei Pálido</h2>
         <p>
-          The Pale King was a Wyrm who shed his shell to take the form of a bug. He granted sapience to the bugs of Hallownest and built the kingdom.
+          O Rei Pálido era uma Wyrm que trocou sua casca para assumir a forma de um inseto. Ele concedeu senciência aos insetos de Hallownest e construiu o reino.
         </p>
       </section>
       <section className={styles.section}>
-        <h2>The Radiance</h2>
+        <h2>A Radiância</h2>
         <p>
-          A higher being of light, forgotten by the bugs when the Pale King arrived. She is the source of the Infection that plagues the kingdom.
+          Um ser superior de luz, esquecido pelos insetos quando o Rei Pálido chegou. Ela é a fonte da Infecção que assola o reino.
         </p>
       </section>
       <section className={styles.section}>
-        <h2>The Void</h2>
+        <h2>O Vazio</h2>
         <p>
-          A substance found at the bottom of the Abyss. It is the enemy of light and was used by the Pale King to create the Vessels.
+          Uma substância encontrada no fundo do Abismo. É o inimigo da luz e foi usado pelo Rei Pálido para criar os Receptáculos.
         </p>
       </section>
     </div>

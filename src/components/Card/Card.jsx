@@ -1,17 +1,17 @@
 import styles from './Card.module.css'
 
-const Card = ({ title, image, description, type }) => {
+const Card = ({ titulo, imagem, descricao, tipo }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
-        {image ? <img src={image} alt={title} className={styles.image} /> : <div className={styles.placeholder}>No Image</div>}
+        {imagem ? <img src={imagem} alt={titulo} className={styles.image} /> : <div className={styles.placeholder}>Sem Imagem</div>}
       </div>
       <div className={styles.content}>
         <div className={styles.header}>
-          <h3 className={styles.title}>{title}</h3>
-          {type && <span className={styles.type}>{type}</span>}
+          <h3 className={styles.title}>{titulo}</h3>
+          {tipo && <span className={styles.type}>{tipo}</span>}
         </div>
-        <p className={styles.description}>{description}</p>
+        <p className={styles.description}>{descricao}</p>
       </div>
     </div>
   )
